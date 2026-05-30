@@ -36,6 +36,41 @@
 - 第一个仓库已创建：ai-learning-journey
 - 学会了：git config, git clone, git add, git commit, git push
 
+### 5. Git 提交流程
+
+**命令行方式：**
+```bash
+# 进入项目目录
+cd C:\SVN\AADE_Projects\Deliveries\文档\ai-learning-journey
+
+# 添加要提交的文件（. 表示所有变更）
+git add .
+
+# 提交（写上说明）
+git commit -m "提交说明"
+
+# 推送到 GitHub
+git push origin main
+```
+
+**VS Code 方式：**
+1. 左侧边栏点第3个图标（源代码管理，分支图标）
+2. 点文件右边的 `+` 号（暂存文件）
+3. 在输入框写提交说明
+4. 按 `Ctrl + Enter` 提交
+5. 点"同步更改"推送到 GitHub
+
+**Git 配置：**
+```bash
+# 配置用户名和邮箱（必须配置，否则提交会报错）
+git config --global user.name "zhaokuo"
+git config --global user.email "zhaokuo66324132@163.com"
+```
+
+**常见问题：**
+- push 失败 → 网络问题（国内访问 GitHub 可能需要代理）
+- 提交报错 → 检查 git config 是否配置了用户名和邮箱
+
 ## 面试高频问题
 
 **问：你为什么从 Java 转 AI？**
